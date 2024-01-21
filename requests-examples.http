@@ -46,17 +46,12 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address": "Склад1",
+  "address": "Склад12",
   "positions": [
     {
       "product": 2,
-      "quantity": 250,
-      "price": 120.50
-    },
-    {
-      "product": 3,
       "quantity": 100,
-      "price": 180
+      "price": 127
     }
   ]
 }
@@ -69,6 +64,12 @@ Content-Type: application/json
 
 ###
 
+# получение склада
+GET {{baseUrl}}/stocks/9
+Content-Type: application/json
+
+###
+
 # удаление склада
 DELETE {{baseUrl}}/stocks/2/
 Content-Type: application/json
@@ -76,20 +77,25 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH {{baseUrl}}/stocks/3/
+PATCH {{baseUrl}}/stocks/10/
 Content-Type: application/json
 
 {
   "positions": [
     {
       "product": 2,
-      "quantity": 100,
-      "price": 130.80
+      "quantity": 101,
+      "price": 127
     },
     {
       "product": 3,
-      "quantity": 243,
-      "price": 145
+      "quantity": 110,
+      "price": 158
+    },
+    {
+      "product": 3,
+      "quantity": 170,
+      "price": 155
     }
   ]
 }
