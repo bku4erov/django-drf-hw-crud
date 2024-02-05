@@ -4,3 +4,4 @@ logistic/migrations/
 stocks_products/__pycache__/
 env/
 netology_stocks_products
+static/
