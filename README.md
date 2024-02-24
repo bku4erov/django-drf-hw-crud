@@ -1,5 +1,25 @@
 # Склады и товары
 
+## Типовые команды для запуска контейнера c backend-сервером
+
+### Создать docker-обзра:
+```bash
+docker build . --tag=<image name>
+```
+Например:
+```bash
+docker build . --tag=djangocrudhw
+```
+
+### Запустить docker-контейнер из созданного docker-обзра:
+```bash
+docker run -d -p <port number>:8000 <image name>
+```
+Например:
+```bash
+docker run -d -p 8000:8000 djangocrudhw
+```
+
 ## Техническая задача: реализовать CRUD-логику для продуктов и складов, используя Django Rest Framework.
 
 **CRUD** — аббревиатура для Create-Read-Update-Delete. Ей обозначают логику для операций создания-чтения-обновления-удаления сущностей. Подробнее: https://ru.wikipedia.org/wiki/CRUD.
